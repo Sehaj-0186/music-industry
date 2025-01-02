@@ -47,3 +47,24 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
+
+.moving-gradient {
+  background: linear-gradient(90deg, blue, rgb(118, 5, 255), rgb(252, 0, 248));
+  background-size: 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: moveGradient 3s infinite linear;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}

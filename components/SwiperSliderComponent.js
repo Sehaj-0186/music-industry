@@ -32,6 +32,7 @@ const SwiperSliderComponent = () => {
         spaceBetween={30}
         slidesPerView={slides}
         grabCursor={true}
+        initialSlide={0}
         className="w-full h-[100vh] mt-[30vh]"
       >
         {/* Slide 1 */}
