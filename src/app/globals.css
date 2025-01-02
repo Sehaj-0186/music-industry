@@ -49,7 +49,7 @@ body {
 }
 
 .moving-gradient {
-  background: linear-gradient(90deg, blue, rgb(118, 5, 255), rgb(252, 0, 248));
+  background: linear-gradient(90deg, rgb(73, 73, 251), rgb(118, 5, 255), rgb(252, 0, 248));
   background-size: 300%;
   background-clip: text;
   -webkit-background-clip: text;

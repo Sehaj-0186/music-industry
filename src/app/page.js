@@ -3,6 +3,7 @@ import React from "react";
 import Header from "../../components/Header";
 import SwiperSliderComponent from "../../components/SwiperSliderComponent";
 import WhoWeAre from "../../components/WhoWeAre";
+import Concepts from "../../components/Concepts";
 
 export default function Home() {
   return (
@@ -12,8 +13,9 @@ export default function Home() {
         <SwiperSliderComponent />
         <WhoWeAre value="AN INDEPENDENT MUSIC AGENCY HELPING BRANDS TELL POWERFUL, AUTHENTIC
           STORIES WITH MUSIC, WORKING CLOSELY WITH OUR CLIENTS AND OUR CURATED
-          GLOBAL NETWORK OF PUNJABI ARTISTS, WE STRATEGISE, PRODUCE, FIND AND LICENSE
-          THE BEST MUSIC."/>
+          GLOBAL NETWORK OF PUNJABI ARTISTS, WE STRATEGISE, PRODUCE, FIND AND LICENSE THE
+           BEST MUSIC."/>
+          <Concepts/>
       </div>
     </>
   );
