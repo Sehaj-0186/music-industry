@@ -7,13 +7,13 @@ const WhoWeAre = (props) => {
   const element = useRef(null);
   const { scrollYProgress } = useScroll({
     target: element,
-    offset: ["start 0.9", "start 0.15"],
+    offset: ["start 0.9", "start 0.1"],
   });
 
   const words = props.value.split(" ");
 
   return (
-    <div className="relative my-10 px-3 py-2 h-[80vh] font-neutralFace">
+    <div className="relative my-28 px-3 py-2 h-fit font-neutralFace">
       <div className="w-full h-[1px] bg-white"></div>
       <div className="flex justify-between w-full text-xs py-2">
         <div>WHO WE ARE</div>
