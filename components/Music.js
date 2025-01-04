@@ -105,7 +105,7 @@ const Music = () => {
         {/* Left Section */}
         <div className="text-[4vw] md:text-[6vw] lg:text-[8vw] font-neutralFace text-center lg:text-left w-full lg:w-[50%] leading-tight">
           <div className="text-xl md:text-3xl lg:text-4xl md:text-center lg:text-right -indent-[5vw] lg:indent-0">
-            ENTER THE WORLD OF
+            ENJOY THE LATEST
           </div>
           <div ref={textRef} className={styles.spanclass}>
             TRENDING
