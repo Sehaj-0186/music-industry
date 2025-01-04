@@ -37,15 +37,24 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 body {
   background-color: black;
-  overflow-x: hidden;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
   color: #e7e7e7;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 }
+
+html {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+* {
+  box-sizing: border-box; /* Ensure padding and borders are included in element size */
+}
+
 ::-webkit-scrollbar {
-  display: none;
+  display: none; /* Hide the scrollbar */
 }
 
 .moving-gradient {
@@ -67,4 +76,9 @@ body {
   100% {
     background-position: 0%;
   }
+}
+
+.container {
+  width: 100%;
+  overflow-x: hidden;
 }
