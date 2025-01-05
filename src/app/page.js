@@ -1,13 +1,27 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../../components/Header";
 import SwiperSliderComponent from "../../components/SwiperSliderComponent";
 import WhoWeAre from "../../components/WhoWeAre";
 import Concepts from "../../components/Concepts";
 import Music from "../../components/Music";
 import { WorldMapDemo } from "../../components/WorldMapDemo";
+import Lenis from "lenis";
+import { FlipWordsDemo } from "../../components/FlipWordsDemo";
+import { HoverBorderGradientDemo } from "../../components/HoverBorderGradientDemo";
 
 export default function Home() {
+
+useEffect(()=>{
+const lenis = new Lenis();
+function raf(time){
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+requestAnimationFrame(raf);
+
+},[])
+
   return (
     <>
       <div className="text-[#e7e7e7] uppercase">
@@ -17,6 +31,8 @@ export default function Home() {
         <Concepts />
         <Music/>
         <WorldMapDemo/>
+        <FlipWordsDemo/>
+        <HoverBorderGradientDemo/>
       </div>
     </>
   );

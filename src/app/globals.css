@@ -30,6 +30,15 @@
   src: local("Neutral Face"),
     url("../../fonts/neutralface-bold-webfont.woff") format("woff");
 }
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Oswald"),
+    url("../../fonts/Oswald-VariableFont_wght.ttf") format("ttf");
+}
+
+
 
 /* you can download this fonts file in description below */
 
@@ -82,3 +91,14 @@ html {
   width: 100%;
   overflow-x: hidden;
 }
+
+option.option-hover:hover {
+  background-color: black;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+
+
+

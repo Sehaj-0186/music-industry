@@ -143,7 +143,7 @@ const Music = () => {
       </div>
   
       {/* Divider */}
-      <div className="h-[1px] bg-white w-[98%] mx-auto my-20 md:my-40"></div>
+      <div className="h-[1px] bg-white w-[98%] mx-auto mt-40 mb-20 "></div>
     </>
   );
   
