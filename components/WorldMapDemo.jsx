@@ -10,7 +10,7 @@ export function WorldMapDemo() {
   return (
     <div className="py-40 dark:bg-black bg-white w-full">
       <div className="max-w-7xl mx-auto text-center">
-        <p className="font-bold text-xl md:text-4xl dark:text-white text-black">
+        <p className="font-light text-xl md:text-4xl dark:text-white text-black font-montserrat">
           Connecting{" "}
           <span ref={ref} className="text-neutral-400">
             {"Cultures".split("").map((char, idx) => (

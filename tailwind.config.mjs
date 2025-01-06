@@ -21,6 +21,7 @@ module.exports = {
         neutralFace: ["Neutral Face"],
         segoe: ["Segoe UI"],
         Oswald:["Oswald"],
+        montserrat:["Montserrat"],
       },
     },
   },

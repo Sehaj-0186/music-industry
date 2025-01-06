@@ -37,6 +37,20 @@
   src: local("Oswald"),
     url("../../fonts/Oswald-VariableFont_wght.ttf") format("ttf");
 }
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat"),
+    url("../../fonts/Montserrat-VariableFont_wght.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Oswald"),
+    url("../../fonts/Oswald-VariableFont_wght.ttf") format("ttf");
+}
 
 
 
@@ -48,14 +62,14 @@
 
 body {
   background-color: black;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow: hidden; /* Prevent horizontal scrolling */
   color: #e7e7e7;
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
 }
 
 html {
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow: hidden; /* Prevent horizontal scrolling */
 }
 
 * {

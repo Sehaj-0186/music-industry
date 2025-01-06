@@ -24,7 +24,7 @@ requestAnimationFrame(raf);
 
   return (
     <>
-      <div className="text-[#e7e7e7] uppercase">
+      <div className="text-[#e7e7e7] uppercase overflow-hidden">
         <Header />
         <SwiperSliderComponent />
         <WhoWeAre value="AN INDEPENDENT MUSIC AGENCY HELPING BRANDS TELL POWERFUL, AUTHENTIC STORIES WITH MUSIC, WORKING CLOSELY WITH OUR CLIENTS AND OUR CURATED GLOBAL NETWORK OF PUNJABI ARTISTS. WE STRATEGISE, PRODUCE, FIND, AND LICENSE THE BEST MUSIC, CREATING IMMERSIVE MUSICAL EXPERIENCES THAT RESONATE WITH AUDIENCES." />
