@@ -25,13 +25,13 @@ export function HoverBorderGradientDemo() {
           containerClassName="rounded-full"
           as="button"
           id="get-subscription-btn"
-          className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
+          className="dark:bg-black bg-white text-black dark:text-white flex items-center justify-center  w-[14vw] px-auto text-[1.25vw] text-nowrap"
           onClick={toggleModal} // Show modal on click
         >
           <span>Get Subscription</span>
         </HoverBorderGradient>
       </div>
-      <div className="h-[1px] bg-white w-[98%] mx-auto mt-8 mb-20"></div>
+      <div className="h-[1px] bg-white w-[98%] mx-auto mt-8"></div>
 
       {/* Modal */}
       <AnimatePresence>

@@ -9,6 +9,7 @@ import { WorldMapDemo } from "../../components/WorldMapDemo";
 import Lenis from "lenis";
 import { FlipWordsDemo } from "../../components/FlipWordsDemo";
 import { HoverBorderGradientDemo } from "../../components/HoverBorderGradientDemo";
+import Footer from "../../components/Footer";
 
 export default function Home() {
 
@@ -33,6 +34,7 @@ requestAnimationFrame(raf);
         <WorldMapDemo/>
         <FlipWordsDemo/>
         <HoverBorderGradientDemo/>
+        <Footer/>
       </div>
     </>
   );

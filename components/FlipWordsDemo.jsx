@@ -7,9 +7,9 @@ export function FlipWordsDemo() {
   const words = ["VIBRANT", "ENERGETIC", "MAGICAL", "LEGENDARY"];
 
   return (
-    <div className={styles.flipWords}>
+    <div className="mt-[50vh] h-fit flex justify-center items-center px-2 font-montserrat">
       <div
-        className="text-[6vw] mx-auto font-normal text-neutral-600 dark:text-neutral-400">
+        className="text-[6vw] mx-auto font-light text-neutral-600 dark:text-neutral-400">
         Dive into{" "}
         <FlipWords words={words} /> <br />
         Tunes from the Heart of Punjab.
