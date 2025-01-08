@@ -35,7 +35,6 @@ const SwiperSliderComponent = () => {
         initialSlide={0}
         className="w-full h-[100vh] mt-[30vh]"
       >
-        {/* Slide 1 */}
         <SwiperSlide className="flex justify-start flex-col w-fit">
           <div className="h-[60%] flex items-end">
             <Image
@@ -55,7 +54,6 @@ const SwiperSliderComponent = () => {
           </div>
         </SwiperSlide>
 
-        {/* Slide 2 */}
         <SwiperSlide className="flex justify-start flex-col w-fit">
         <div className="flex justify-between items-center px-4 py-2">
             <div className="flex flex-col">
@@ -79,7 +77,6 @@ const SwiperSliderComponent = () => {
           
         </SwiperSlide>
 
-        {/* Slide 3 */}
         <SwiperSlide className="flex justify-start flex-col w-fit">
           <div className="h-[60%] flex items-end">
             <Image
@@ -102,7 +99,6 @@ const SwiperSliderComponent = () => {
           </div>
         </SwiperSlide>
 
-        {/* Slide 4 */}
         <SwiperSlide className="flex justify-start flex-col w-fit">
         <div className="flex justify-between items-center px-4 py-2">
             <div className="flex flex-col">
@@ -126,7 +122,6 @@ const SwiperSliderComponent = () => {
          
         </SwiperSlide>
 
-        {/* Slide 5 */}
         <SwiperSlide className="flex justify-start flex-col w-fit">
           <div className="h-[60%] flex items-end">
             <Image
@@ -149,7 +144,6 @@ const SwiperSliderComponent = () => {
           </div>
         </SwiperSlide>
 
-        {/* Slide 6 */}
         <SwiperSlide className="flex justify-start flex-col w-fit">
         <div className="flex justify-between items-center px-4 py-2">
             <div className="flex flex-col">

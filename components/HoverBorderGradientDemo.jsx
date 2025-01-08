@@ -11,29 +11,29 @@ export function HoverBorderGradientDemo() {
     const button = document.getElementById("get-subscription-btn");
     const rect = button.getBoundingClientRect();
     setButtonPosition({
-      x: rect.left + rect.width / 2, // Center x-coordinate of the button
-      y: rect.top + rect.height / 2, // Center y-coordinate of the button
+      x: rect.left + rect.width / 2, 
+      y: rect.top + rect.height / 2, 
     });
     setIsModalOpen((prev) => !prev);
   };
 
   return (
     <>
-      {/* Main Content */}
+      
       <div className="mx-9 my-4 flex justify-start text-center">
         <HoverBorderGradient
           containerClassName="rounded-full"
           as="button"
           id="get-subscription-btn"
           className="dark:bg-black bg-white text-black dark:text-white flex items-center justify-center  w-[14vw] px-auto text-[1.25vw] text-nowrap"
-          onClick={toggleModal} // Show modal on click
+          onClick={toggleModal} 
         >
           <span>Get Subscription</span>
         </HoverBorderGradient>
       </div>
       <div className="h-[1px] bg-white w-[98%] mx-auto mt-8"></div>
 
-      {/* Modal */}
+      
       <AnimatePresence>
         {isModalOpen && (
           <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
@@ -58,8 +58,8 @@ export function HoverBorderGradientDemo() {
               }}
               transition={{
                 type: "tween",
-                duration: 0.6, // Smooth scaling duration
-                ease: "easeInOut", // Smooth easing function
+                duration: 0.6, 
+                ease: "easeInOut",
               }}
               className="bg-white dark:bg-black rounded-lg shadow-3xl border-running shadow-white p-6 relative w-[24rem] "
             >
@@ -67,7 +67,6 @@ export function HoverBorderGradientDemo() {
                 Explore more from us
               </h2>
               <form>
-                {/* Dropdown */}
                 <select
                   id="subscription"
                   name="subscription"
@@ -84,7 +83,6 @@ export function HoverBorderGradientDemo() {
                   </option>
                 </select>
 
-                {/* Email Input */}
                 <input
                   type="email"
                   id="email"
@@ -94,7 +92,6 @@ export function HoverBorderGradientDemo() {
                   required
                 />
 
-                {/* Password Input */}
                 <input
                   type="password"
                   id="password"
@@ -104,7 +101,6 @@ export function HoverBorderGradientDemo() {
                   required
                 />
 
-                {/* Buttons */}
                 <div className="flex justify-between space-x-4 mt-6">
                   <button
                     onClick={toggleModal}

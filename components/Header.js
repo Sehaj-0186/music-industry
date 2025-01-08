@@ -93,7 +93,9 @@ const Header = () => {
           <div>
             AN INDEPENDENT <br /> MUSIC INDUSTRY
           </div>
-          <div className="tracking-wider">PUNJABI <br /> MUSIC</div>
+          <div className="tracking-wider">
+            PUNJABI <br /> MUSIC
+          </div>
         </div>
       </div>
     </>

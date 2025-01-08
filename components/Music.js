@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { ExpandableCardDemo } from "./ExpandableCardDemo";
 import styles from "../src/app/page.module.scss";
-import classNames from 'classnames';
+import classNames from "classnames";
 import { delay } from "framer-motion";
 
 const scrambleText = (
@@ -15,8 +15,8 @@ const scrambleText = (
   const fixedText = text
     .split("")
     .map(() => " ")
-    .join(""); // Ensure consistent width
-  element.textContent = fixedText; // Set initial content to prevent vibration
+    .join("");
+  element.textContent = fixedText;
   const interval = setInterval(() => {
     const scrambled = originalText
       .split("")
@@ -50,12 +50,11 @@ const Music = () => {
             "TRENDING",
             "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
           );
-        
-          setHasAnimated(true); // Prevent re-triggering the animation
+
+          setHasAnimated(true);
         }
       },
-      { threshold: 0.5 },
-       // Trigger when 50% of the component is in view
+      { threshold: 0.5 }
     );
 
     if (textRef.current) {
@@ -77,11 +76,10 @@ const Music = () => {
             setIsSelected(true);
           }, 1500);
 
-          // Cleanup timer when the element goes out of view
           return () => clearTimeout(timer);
         }
       },
-      { threshold: 0.5 } // Adjust as needed to control how much of the button should be visible to trigger
+      { threshold: 0.5 }
     );
 
     if (buttonRef.current) {
@@ -95,14 +93,12 @@ const Music = () => {
     };
   }, []);
 
-  const[isSelected, setIsSelected] = useState(false)
+  const [isSelected, setIsSelected] = useState(false);
   const buttonRef = useRef(null);
-
 
   return (
     <>
       <div className="h-fit overflow-hidden flex flex-col lg:flex-row justify-center items-center">
-        {/* Left Section */}
         <div className="text-[4vw] md:text-[6vw] lg:text-[8vw] font-neutralFace text-center lg:text-left w-full lg:w-[50%] leading-tight">
           <div className="text-xl md:text-3xl lg:text-4xl md:text-center lg:text-right -indent-[5vw] lg:indent-0">
             ENJOY THE LATEST
@@ -111,9 +107,7 @@ const Music = () => {
             TRENDING
           </div>
           <div className="flex md:justify-center lg:flex-row items-center lg:justify-start lg:-mt-6 sm:justify-center lg:indent-[10vw]">
-            <div className="text-xl md:text-3xl lg:text-5xl ">
-              MUSIC
-            </div>
+            <div className="text-xl md:text-3xl lg:text-5xl ">MUSIC</div>
             <div
               ref={buttonRef}
               onClick={() => setIsSelected(!isSelected)}
@@ -135,18 +129,15 @@ const Music = () => {
             </div>
           </div>
         </div>
-  
-        {/* Right Section */}
+
         <div className="w-full lg:w-[50%] px-4 md:px-8">
           <ExpandableCardDemo />
         </div>
       </div>
-  
-      {/* Divider */}
+
       <div className="h-[1px] bg-white w-[98%] mx-auto mt-40 mb-20 "></div>
     </>
   );
-  
 };
 
 export default Music;

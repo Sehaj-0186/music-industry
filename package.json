@@ -11,6 +11,7 @@
   "dependencies": {
     "@react-three/drei": "^9.120.5",
     "@react-three/fiber": "^8.17.10",
+    "@studio-freight/lenis": "^1.0.42",
     "classnames": "^2.5.1",
     "clsx": "^2.1.1",
     "dotted-map": "^2.2.3",
